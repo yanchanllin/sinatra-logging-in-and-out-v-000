@@ -5,7 +5,6 @@ GIT
     database_cleaner (1.6.3)
 
 GEM
-  remote: http://rubygems.org/
   specs:
     activemodel (5.1.5)
       activesupport (= 5.1.5)
@@ -92,7 +91,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  activerecord
+  activerecord (~> 5.1, >= 5.1.5)
   capybara
   database_cleaner!
   pry
@@ -101,8 +100,8 @@ DEPENDENCIES
   require_all
   rspec
   shotgun
-  sinatra
-  sinatra-activerecord
+  sinatra (~> 2.0, >= 2.0.1)
+  sinatra-activerecord (~> 2.0, >= 2.0.13)
   sqlite3
   thin
 
